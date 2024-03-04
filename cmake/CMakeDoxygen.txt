@@ -1,0 +1,11 @@
+## @defgroup cmake_functions CMake Functions
+## @{
+## @}
+
+## @defgroup cmake_macros CMake Macros
+## @{
+## @}
+
+## @defgroup cmake_options CMake Options
+## @{
+## @}

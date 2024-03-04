@@ -1,0 +1,5 @@
+## @file 
+## @package Example
+def sanatize_target TARGET_NAME:
+	passdef sanatize_target TARGET_NAME:
+	pass

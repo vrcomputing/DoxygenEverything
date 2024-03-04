@@ -1,0 +1,31 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "inherits" : "default",
+            "name": "rick",
+            "displayName": "Default Config for Rick Vogel",
+            "description": "Default Config for Rick Vogel",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}-build",
+            "cacheVariables": {
+                "CMAKE_PREFIX_PATH": {
+                    "type": "PATH",
+                    "value": "C:/Qt/5.15.2/msvc2019_64"
+                },
+                "Qt5_DIR": {
+                    "type": "PATH",
+                    "value": "C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5"
+                }
+            },
+            "environment": {
+                "PATH": "$env{HOME}/ninja/bin:$penv{PATH}"
+            }
+        }
+    ]
+}

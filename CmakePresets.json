@@ -1,0 +1,33 @@
+{
+    "version": 6,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 23,
+        "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "default",
+        "displayName": "Default Config",
+        "description": "Default build using Ninja generator",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}-build",
+        "architecture": {
+            "value": "x64",
+            "strategy": "external"
+          },
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_INSTALL_PREFIX": "${sourceDir}-build",
+          "CMAKE_PREFIX_PATH": {
+            "type": "PATH",
+            "value": "C:/Qt/5.15.2/msvc2019_64"
+          },
+          "Qt5_DIR": {
+            "type": "PATH",
+            "value": "C:/Qt/5.15.2/msvc2019_64/lib/cmake/Qt5"
+          }
+        }        
+      }
+    ]
+}
